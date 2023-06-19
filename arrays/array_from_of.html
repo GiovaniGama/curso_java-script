@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam lorem nec mi aliquam euismod. Nullam
+            est ligula, hendrerit bibendum pharetra ac, hendrerit pellentesque felis. Fusce consequat elit ut massa
+            mollis, non eleifend mauris pellentesque. Donec ut ante felis. Nulla vitae diam at leo venenatis molestie.
+            Pellentesque eros ligula, molestie at ligula a, accumsan consectetur sem. Quisque neque lectus, fermentum
+            vel viverra a, feugiat sed odio. Nulla id ornare est, sit amet consequat justo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam lorem nec mi aliquam euismod. Nullam
+            est ligula, hendrerit bibendum pharetra ac, hendrerit pellentesque felis. Fusce consequat elit ut massa
+            mollis, non eleifend mauris pellentesque. Donec ut ante felis. Nulla vitae diam at leo venenatis molestie.
+            Pellentesque eros ligula, molestie at ligula a, accumsan consectetur sem. Quisque neque lectus, fermentum
+            vel viverra a, feugiat sed odio. Nulla id ornare est, sit amet consequat justo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam lorem nec mi aliquam euismod. Nullam
+            est ligula, hendrerit bibendum pharetra ac, hendrerit pellentesque felis. Fusce consequat elit ut massa
+            mollis, non eleifend mauris pellentesque. Donec ut ante felis. Nulla vitae diam at leo venenatis molestie.
+            Pellentesque eros ligula, molestie at ligula a, accumsan consectetur sem. Quisque neque lectus, fermentum
+            vel viverra a, feugiat sed odio. Nulla id ornare est, sit amet consequat justo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam lorem nec mi aliquam euismod. Nullam
+            est ligula, hendrerit bibendum pharetra ac, hendrerit pellentesque felis. Fusce consequat elit ut massa
+            mollis, non eleifend mauris pellentesque. Donec ut ante felis. Nulla vitae diam at leo venenatis molestie.
+            Pellentesque eros ligula, molestie at ligula a, accumsan consectetur sem. Quisque neque lectus, fermentum
+            vel viverra a, feugiat sed odio. Nulla id ornare est, sit amet consequat justo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam lorem nec mi aliquam euismod. Nullam
+            est ligula, hendrerit bibendum pharetra ac, hendrerit pellentesque felis. Fusce consequat elit ut massa
+            mollis, non eleifend mauris pellentesque. Donec ut ante felis. Nulla vitae diam at leo venenatis molestie.
+            Pellentesque eros ligula, molestie at ligula a, accumsan consectetur sem. Quisque neque lectus, fermentum
+            vel viverra a, feugiat sed odio. Nulla id ornare est, sit amet consequat justo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam lorem nec mi aliquam euismod. Nullam
+            est ligula, hendrerit bibendum pharetra ac, hendrerit pellentesque felis. Fusce consequat elit ut massa
+            mollis, non eleifend mauris pellentesque. Donec ut ante felis. Nulla vitae diam at leo venenatis molestie.
+            Pellentesque eros ligula, molestie at ligula a, accumsan consectetur sem. Quisque neque lectus, fermentum
+            vel viverra a, feugiat sed odio. Nulla id ornare est, sit amet consequat justo.</p>
+    </main>
+    <script>
+        const arr1 = new Array(3)
+        console.log(arr1)
+
+        const stringTeste = 'giovani'
+        const arr2 = Array.from(stringTeste)
+        console.log(arr2)
+
+        const arr3 = Array.from(arr1)
+        arr3.push(4, 5)
+        console.log(arr3)
+
+        const arr4 = Array.of(3)
+        console.log(arr4);
+
+        let paragrafos = document.querySelectorAll('p')
+        // paragrafos.forEach((p, i) => {
+        //     p.textContent = `${++i} - ${p.textContent}`
+        // })
+
+        paragrafos = Array.from(paragrafos)
+        paragrafos.map((p, i) => {
+            p.textContent = `${++i} - ${p.textContent}`
+        })
+
+
+    </script>
+</body>
+
+</html>
